@@ -31,3 +31,18 @@ yarn electron:serve
 ### Extra
 yarn add bootstrap@next
 
+### For build add in package.json
+"build": {
+    "extends": null,
+    "appId": "com.example.electron-cra",
+    "files": [
+      "dist/**/*",
+      "build/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+    
+
